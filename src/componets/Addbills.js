@@ -22,7 +22,7 @@ function Addbill() {
             };
 
             console.log(finalData);
-            await axios.post('http://localhost:3001/addbill', finalData);
+            await axios.post('https://fashionfellows-3.onrender.com/addbill', finalData);
             navigate('/invoice');
         } catch (error) {
             console.error('There was an error submitting the data:', error);
@@ -32,7 +32,7 @@ function Addbill() {
     useEffect(() => {
         const fetchItems = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/allitemas');
+                const response = await axios.get('https://fashionfellows-3.onrender.com/allitemas');
                 setItems(response.data);
             } catch (error) {
                 console.error('Error fetching items:', error);

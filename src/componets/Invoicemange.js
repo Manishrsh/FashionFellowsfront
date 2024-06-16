@@ -14,7 +14,7 @@ function Invoicemange() {
   useEffect(() => {
     const fetchInvoiceData = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/addbills');
+        const response = await axios.get('https://fashionfellows-3.onrender.com/addbills');
         console.log(response.data);
         // Assuming response.data is an array and you want the first item
         setInvoiceData(response.data[0]);

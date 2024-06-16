@@ -9,7 +9,7 @@ function UserTable() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/alliteams');
+        const response = await axios.get('https://fashionfellows-3.onrender.com/alliteams');
         console.log(response.data)
         setUsers(response.data);
       } catch (error) {

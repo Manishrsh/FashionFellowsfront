@@ -10,7 +10,7 @@ function Additeam() {
     const onSubmit = async data => {
         try {
             console.log(data);
-            const response = await axios.post('http://localhost:3001/additeam', data);
+            const response = await axios.post('https://fashionfellows-3.onrender.com/additeam', data);
             reset({
                 iteam: "",
                 prize: "",

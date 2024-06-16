@@ -9,7 +9,7 @@ export default function Employee() {
   
   const onSubmit = async data => {
     try {
-      const response = await axios.post('http://localhost:3001/user', data)
+      const response = await axios.post('https://fashionfellows-3.onrender.com/user', data)
        .then(response =>{ window.location.reload(); }) 
     } catch (error) {
       console.error('There was an error submitting the data:', error);
