@@ -1,0 +1,20 @@
+body {
+    font-family: 'Cascadia', 'monospace';
+    font-size: larger;
+
+  }
+  
+  /* Additional styles for NavbarComponent */
+ 
+  .navbar-brand,
+   .nav-link {
+    font-family: "Pacifico", cursive;
+    font-size: large;
+  }
+  .navbar-brand{
+    font-family: "Pacifico", cursive;
+    
+    font-size: larger;
+  }
+  
+  
