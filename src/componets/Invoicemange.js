@@ -47,7 +47,7 @@ function Invoicemange() {
       formData.append('invoice', pdfBlob, 'invoice.pdf');
 
       // Send the PDF to the backend
-      axios.post('http://localhost:3001/send-pdf', formData, {
+      axios.post('https://fashionfellows-3.onrender.com/send-pdf', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
