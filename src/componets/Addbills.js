@@ -88,7 +88,7 @@ function Addbill() {
 
                         <Form.Group controlId="item">
                             <Form.Label style={{ marginTop: "30px" }}>Item</Form.Label>
-                            <Form.Control as="select" {...register("item", { required: true })} onChange={handleItemChange}>
+                            <Form.Control as="select" {...register("item")} onChange={handleItemChange}>
                                 <option value="">Select an item</option>
                                 {items.map((item) => (
                                     <option key={item._id} value={item._id}>{item.iteam}</option>
